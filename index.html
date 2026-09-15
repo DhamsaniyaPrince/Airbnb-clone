@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cliffside Cedar Cabin · Mount Hood, Oregon · Airbnb</title>
+<meta name="description" content="Entire cabin hosted by Maren · 4 guests · 2 bedrooms · 2 beds · 1.5 baths">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader" role="banner">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="Airbnb Clone home">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+        <path fill="#FF385C" d="M16 1c1.7 0 3 .8 4.1 2.5l.3.5 6.7 13.6.2.5c.9 2 1.4 3.2 1.4 4.5 0 3.6-2.9 6.4-6.4 6.4-2.2 0-4.1-1.1-6.3-3.5-2.2 2.4-4.1 3.5-6.3 3.5C6.1 29 3.2 26.2 3.2 22.6c0-1.3.5-2.5 1.4-4.5l.2-.5L11.6 4l.3-.5C13 1.8 14.3 1 16 1zm0 2c-.9 0-1.6.5-2.4 1.7l-.3.5L6.6 19l-.2.5c-.8 1.7-1.1 2.5-1.1 3.1 0 2.4 2 4.4 4.4 4.4 1.6 0 3.1-1 5.2-3.5l.9-1.1.9 1.1c2.1 2.5 3.6 3.5 5.2 3.5 2.4 0 4.4-2 4.4-4.4 0-.6-.3-1.4-1.1-3.1l-.2-.5-6.7-13.6-.3-.5C17.6 3.5 16.9 3 16 3z"/>
+      </svg>
+      <span>airhome</span>
+    </a>
+
+    <!-- Compact search pill: hidden until the user scrolls past the gallery -->
+    <button class="search-pill" id="searchPill" type="button" aria-label="Open search: Government Camp, Nov 14 to 18, 2 guests">
+      <span class="pill-seg">Government Camp</span>
+      <span class="pill-divider" aria-hidden="true"></span>
+      <span class="pill-seg" id="pillDates">Nov 14 – 18</span>
+      <span class="pill-divider" aria-hidden="true"></span>
+      <span class="pill-seg muted" id="pillGuests">2 guests</span>
+      <span class="pill-icon" aria-hidden="true">
+        <svg viewBox="0 0 16 16" width="12" height="12"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M11 11l3.5 3.5"/></svg>
+      </span>
+    </button>
+
+    <nav class="header-tabs" aria-label="Primary">
+      <button class="tab active" type="button" aria-current="page">Homes</button>
+      <button class="tab" type="button">Experiences <span class="new-pill">NEW</span></button>
+      <button class="tab" type="button">Services</button>
+    </nav>
+
+    <div class="header-right">
+      <button class="host-link" type="button">Airhome your home</button>
+      <button class="icon-btn" type="button" aria-label="Change language and region">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 .5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15ZM1.55 8.5h2.08a11.7 11.7 0 0 0 .93 4.11A6.51 6.51 0 0 1 1.55 8.5Zm0-1a6.51 6.51 0 0 1 3.01-4.11A11.7 11.7 0 0 0 3.63 7.5H1.55Zm5.95-5.94v5.94H4.63A10.6 10.6 0 0 1 5.6 3.36 6.44 6.44 0 0 1 7.5 1.56ZM7.5 8.5v5.94a6.44 6.44 0 0 1-1.9-1.8 10.6 10.6 0 0 1-.97-4.14H7.5Zm1 5.94V8.5h2.87a10.6 10.6 0 0 1-.97 4.14 6.44 6.44 0 0 1-1.9 1.8Zm0-6.94V1.56a6.44 6.44 0 0 1 1.9 1.8 10.6 10.6 0 0 1 .97 4.14H8.5Zm2.92 1h2.08a6.51 6.51 0 0 1-3.01 4.11c.5-1.26.83-2.67.93-4.11Zm0-1c-.1-1.44-.43-2.85-.93-4.11a6.51 6.51 0 0 1 3.01 4.11h-2.08Z"/></svg>
+      </button>
+      <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Main menu">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M2 4h20v2H2V4Zm0 7h20v2H2v-2Zm0 7h20v2H2v-2Z"/></svg>
+        <span class="avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#717171" d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5Zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5Z"/></svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <div class="container title-block reveal" data-reveal>
+    <div class="property-status-tag" id="propertyStatusTag">
+      <span class="pulse-dot"></span> Currently viewing &amp; reserving this property
+    </div>
+    <h1 id="listingTitle">Cliffside Cedar Cabin with private hot tub</h1>
+    <div class="title-row">
+      <div class="rating-line">
+        <svg class="star" viewBox="0 0 32 32" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M15.1 1.58c.4-.76 1.4-.76 1.8 0l4.13 7.75 8.6 1.7c.85.17 1.19 1.2.6 1.83l-6.03 6.44 1.15 8.72c.11.86-.76 1.5-1.54 1.13L16 25.14l-7.81 3.99c-.78.4-1.65-.27-1.54-1.13l1.15-8.72-6.03-6.44c-.59-.63-.25-1.66.6-1.83l8.6-1.7 4.13-7.73Z"/></svg>
+        <span><strong id="listingRating">4.97</strong></span>
+        <span aria-hidden="true">·</span>
+        <button class="link-btn" type="button" id="jumpReviews"><span id="listingReviews">128 reviews</span></button>
+        <span aria-hidden="true">·</span>
+        <button class="link-btn location-link" id="listingLocation" type="button">Government Camp, Oregon</button>
+      </div>
+      <div class="title-actions">
+        <button class="ghost-btn" id="shareBtn" type="button">
+          <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 1h8a1 1 0 0 1 1 1v13l-5-3.5L3 15V2a1 1 0 0 1 1-1Z"/></svg>
+          Share
+        </button>
+        <button class="ghost-btn" id="saveBtn" type="button" aria-pressed="false">
+          <svg class="heart-outline" viewBox="0 0 32 32" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.4" d="M16 28S3 20.1 3 11.6C3 7.4 6.4 4 10.6 4c2.4 0 4.6 1.2 5.9 3.1C17.8 5.2 20 4 22.4 4 26.6 4 30 7.4 30 11.6 30 20.1 16 28 16 28Z"/></svg>
+          <span class="save-label">Save</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ GALLERY ============ -->
+  <div class="container">
+    <div class="gallery reveal" id="gallery" data-reveal>
+      <button class="gallery-main skeleton" id="galleryOpen0" aria-label="Open photo 1 of 5 in gallery view">
+        <img loading="eager" id="galleryImg0" src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=1200&q=80" alt="Cedar cabin exterior at dusk surrounded by pine trees, warm light glowing from the windows">
+      </button>
+      <button class="gallery-cell skeleton" id="galleryOpen1" aria-label="Open photo 2 of 5 in gallery view">
+        <img loading="lazy" id="galleryImg1" src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80" alt="Bright open-plan living room with a wood-burning stove and large windows">
+      </button>
+      <button class="gallery-cell skeleton" id="galleryOpen2" aria-label="Open photo 3 of 5 in gallery view">
+        <img loading="lazy" id="galleryImg2" src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80" alt="Bedroom with a queen bed and forest view">
+      </button>
+      <button class="gallery-cell skeleton" id="galleryOpen3" aria-label="Open photo 4 of 5 in gallery view">
+        <img loading="lazy" id="galleryImg3" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="Outdoor private hot tub on a wooden deck at night">
+      </button>
+      <button class="gallery-cell skeleton" id="galleryOpen4" aria-label="Open photo 5 of 5 in gallery view">
+        <img loading="lazy" id="galleryImg4" src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=80" alt="Rustic bathroom with a claw-foot tub and cedar accents">
+        <span class="show-all-badge">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M2 3h12v2H2V3Zm0 4h12v2H2V7Zm0 4h12v2H2v-2Z"/></svg>
+          Show all photos
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ BODY GRID ============ -->
+  <div class="container body-grid">
+
+    <div class="content-col">
+
+      <section class="host-summary reveal" data-reveal>
+        <div>
+          <h2 id="hostHeading">Entire cabin hosted by Maren</h2>
+          <p class="meta-line" id="hostMeta">4 guests · 2 bedrooms · 2 beds · 1.5 baths</p>
+        </div>
+        <button class="host-avatar-btn" id="hostAvatarBtn" aria-label="View host profile">
+          <img class="host-avatar" id="hostAvatarImg" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="" width="56" height="56">
+          <span class="superhost-ring" aria-hidden="true"></span>
+        </button>
+      </section>
+
+      <hr class="divider">
+
+      <section class="feature-list reveal" data-reveal aria-label="Listing highlights">
+        <div class="feature">
+          <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M24 4 6 14v20h12V22h12v12h12V14L24 4Z"/></svg>
+          <div>
+            <h3>Entire cabin, all to yourself</h3>
+            <p>A private cedar cabin — no shared spaces.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M24 4c11 0 20 9 20 20s-9 20-20 20S4 35 4 24 13 4 24 4Zm0 6a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-3 9v18h6V19h-6Z"/></svg>
+          <div>
+            <h3>Self check-in</h3>
+            <p>Check yourself in with a keypad smart lock.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M24 4 4 12v10c0 11 8.4 19.4 20 22 11.6-2.6 20-11 20-22V12L24 4Z"/></svg>
+          <div>
+            <h3>Great for the outdoors</h3>
+            <p>Guests love this well-appointed trailhead spot.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="description-section reveal" data-reveal>
+        <p id="descriptionText" class="description-text">
+          Tucked into six wooded acres fifteen minutes from Mount Hood's Timberline Lodge, this cedar cabin was
+          built by hand in 2019 and sleeps four across two bedrooms. Mornings start on the covered porch with
+          coffee and mountain air; evenings end in the private hot tub under the trees. The cabin runs on
+          high-speed fiber internet, so it suits a quiet work trip as easily as a weekend away. Inside you'll
+          find a wood-burning stove, a fully equipped kitchen, and windows on three sides that keep the forest
+          close all day long.
+        </p>
+        <button class="link-btn underline chevron-btn" id="showMoreBtn" type="button" aria-expanded="false" aria-controls="descriptionText">
+          <span>Show more</span>
+          <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3 6l5 5 5-5"/></svg>
+        </button>
+      </section>
+
+      <hr class="divider">
+
+      <section class="amenities-section reveal" data-reveal>
+        <h2>What this place offers</h2>
+        <ul class="amenities-grid">
+          <li><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 18h24M6 18V9a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v9M4 18v6M28 18v6"/></svg> Private hot tub</li>
+          <li><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 12h24v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V12ZM4 12l4-6h16l4 6"/></svg> Free parking on premises</li>
+          <li><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M16 3v6M8 9h16l3 20H5L8 9Z"/></svg> Wood-burning fireplace</li>
+          <li><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="1.5"/><path fill="none" stroke="currentColor" stroke-width="1.5" d="M10 16a6 6 0 0 1 12 0"/></svg> High-speed wifi, 300 Mbps</li>
+          <li><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><rect x="5" y="8" width="22" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path fill="none" stroke="currentColor" stroke-width="1.5" d="M10 24v3M22 24v3"/></svg> Dedicated workspace</li>
+          <li><svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" d="M6 12h20l-2 14H8L6 12ZM10 12V8a6 6 0 0 1 12 0v4"/></svg> Full kitchen</li>
+        </ul>
+        <button class="secondary-btn" id="showAmenitiesBtn" type="button">Show all 24 amenities</button>
+      </section>
+
+      <hr class="divider">
+
+      <section class="calendar-section reveal" data-reveal>
+        <div class="calendar-header">
+          <div>
+            <h2>4 nights in Government Camp</h2>
+            <p class="meta-line" id="calendarSubtitle">Nov 14, 2026 – Nov 18, 2026</p>
+          </div>
+        </div>
+        <div class="mini-calendar" id="inlineCalendarMount"></div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="reviews-section reveal" data-reveal aria-labelledby="reviewsHeading" id="reviewsSection">
+        <h2 id="reviewsHeading">
+          <svg class="star" viewBox="0 0 32 32" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M15.1 1.58c.4-.76 1.4-.76 1.8 0l4.13 7.75 8.6 1.7c.85.17 1.19 1.2.6 1.83l-6.03 6.44 1.15 8.72c.11.86-.76 1.5-1.54 1.13L16 25.14l-7.81 3.99c-.78.4-1.65-.27-1.54-1.13l1.15-8.72-6.03-6.44c-.59-.63-.25-1.66.6-1.83l8.6-1.7 4.13-7.73Z"/></svg>
+          4.97 · 128 reviews
+        </h2>
+
+        <div class="rating-bars">
+          <div class="rating-bar-row"><span>Cleanliness</span><div class="bar"><div data-target="98"></div></div><span>4.9</span></div>
+          <div class="rating-bar-row"><span>Accuracy</span><div class="bar"><div data-target="97"></div></div><span>4.9</span></div>
+          <div class="rating-bar-row"><span>Check-in</span><div class="bar"><div data-target="99"></div></div><span>5.0</span></div>
+          <div class="rating-bar-row"><span>Communication</span><div class="bar"><div data-target="99"></div></div><span>5.0</span></div>
+          <div class="rating-bar-row"><span>Location</span><div class="bar"><div data-target="94"></div></div><span>4.8</span></div>
+          <div class="rating-bar-row"><span>Value</span><div class="bar"><div data-target="96"></div></div><span>4.9</span></div>
+        </div>
+
+        <div class="review-carousel-wrap">
+          <div class="review-carousel" id="reviewCarousel">
+            <article class="review-card">
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&q=80" alt="" width="44" height="44">
+                <div><strong>Priya</strong><span>3 weeks ago</span></div>
+              </div>
+              <p>The cabin was even better than the photos. We spent every evening in the hot tub watching the
+                stars — quiet, clean, and Maren was quick to answer every message.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?w=100&q=80" alt="" width="44" height="44">
+                <div><strong>Owen</strong><span>1 month ago</span></div>
+              </div>
+              <p>Perfect basecamp for a Timberline hike. The wood stove made the cold mornings the best part of
+                the trip. Would book again in a heartbeat.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=100&q=80" alt="" width="44" height="44">
+                <div><strong>Sofia</strong><span>1 month ago</span></div>
+              </div>
+              <p>Self check-in was seamless and the kitchen had everything we needed. So peaceful — you can hear
+                the wind in the trees at night.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="" width="44" height="44">
+                <div><strong>Daniel</strong><span>2 months ago</span></div>
+              </div>
+              <p>Small details made it special — extra firewood stacked and ready, local trail map on the counter,
+                fast wifi for the mornings I had to work.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?w=100&q=80" alt="" width="44" height="44">
+                <div><strong>Ines</strong><span>2 months ago</span></div>
+              </div>
+              <p>We came for one night and stayed an extra one. The porch coffee-and-fog mornings alone were
+                worth the drive from Portland.</p>
+            </article>
+            <article class="review-card">
+              <div class="review-author">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=100&q=80" alt="" width="44" height="44">
+                <div><strong>Marcus</strong><span>3 months ago</span></div>
+              </div>
+              <p>Maren left a binder with trail notes and snow-condition tips that made planning our hike so much
+                easier. A genuinely thoughtful host.</p>
+            </article>
+          </div>
+          <button class="carousel-nav prev" id="reviewPrev" type="button" aria-label="Previous reviews" disabled>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M15.5 3.5 6 12l9.5 8.5 1.4-1.4L9 12l7.9-7.1z"/></svg>
+          </button>
+          <button class="carousel-nav next" id="reviewNext" type="button" aria-label="Next reviews">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8.5 3.5 18 12l-9.5 8.5-1.4-1.4L15 12 7.1 4.9z"/></svg>
+          </button>
+        </div>
+        <div class="carousel-dots" id="reviewDots" role="tablist" aria-label="Review page"></div>
+
+        <button class="secondary-btn" type="button">Show all 128 reviews</button>
+      </section>
+
+      <hr class="divider">
+
+      <section class="location-section reveal" data-reveal>
+        <h2>Where you'll be</h2>
+        <p class="meta-line">Government Camp, Oregon, United States</p>
+        <div class="map-placeholder" role="img" aria-label="Approximate map location of the cabin near Government Camp, Oregon">
+          <svg viewBox="0 0 600 260" preserveAspectRatio="none" aria-hidden="true">
+            <rect width="600" height="260" fill="#e9ebee"/>
+            <path d="M0 60 H600 M0 120 H600 M0 180 H600" stroke="#d7dade" stroke-width="1"/>
+            <path d="M60 0 V260 M160 0 V260 M260 0 V260 M360 0 V260 M460 0 V260 M560 0 V260" stroke="#d7dade" stroke-width="1"/>
+          </svg>
+          <span class="map-pin-pulse" aria-hidden="true"></span>
+          <span class="map-pin" aria-hidden="true"></span>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- RIGHT COLUMN: BOOKING CARD -->
+    <aside class="booking-col" aria-label="Booking">
+      <div class="booking-card reveal" data-reveal>
+        <div class="booking-price-row">
+          <span class="price"><strong id="cardNightlyPrice">$284</strong> night</span>
+          <span class="rating-line small">
+            <svg class="star" viewBox="0 0 32 32" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M15.1 1.58c.4-.76 1.4-.76 1.8 0l4.13 7.75 8.6 1.7c.85.17 1.19 1.2.6 1.83l-6.03 6.44 1.15 8.72c.11.86-.76 1.5-1.54 1.13L16 25.14l-7.81 3.99c-.78.4-1.65-.27-1.54-1.13l1.15-8.72-6.03-6.44c-.59-.63-.25-1.66.6-1.83l8.6-1.7 4.13-7.73Z"/></svg>
+            <span id="cardRating">4.97</span> · <button class="link-btn" type="button" id="cardReviews">128 reviews</button>
+          </span>
+        </div>
+
+        <div class="booking-fields">
+          <fieldset class="date-fieldset">
+            <legend class="visually-hidden">Select check-in and check-out dates</legend>
+            <div class="date-grid">
+              <button type="button" class="date-box" id="checkinBox" aria-haspopup="dialog" aria-expanded="false">
+                <span class="date-label">CHECK-IN</span>
+                <span class="date-value" id="checkinValue">11/14/2026</span>
+              </button>
+              <button type="button" class="date-box" id="checkoutBox" aria-haspopup="dialog" aria-expanded="false">
+                <span class="date-label">CHECKOUT</span>
+                <span class="date-value" id="checkoutValue">11/18/2026</span>
+              </button>
+            </div>
+          </fieldset>
+
+          <button type="button" class="guest-box" id="guestBox" aria-haspopup="dialog" aria-expanded="false">
+            <span class="date-label">GUESTS</span>
+            <span class="date-value" id="guestValue">2 guests</span>
+            <svg class="chev" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M3 6l5 5 5-5"/></svg>
+          </button>
+
+          <!-- Guest stepper popover -->
+          <div class="popover" id="guestPopover" role="dialog" aria-label="Select number of guests" hidden>
+            <div class="stepper-row">
+              <div class="stepper-text"><strong>Adults</strong><span>Ages 13+</span></div>
+              <div class="stepper-controls">
+                <button type="button" class="stepper-btn" data-step="adults" data-dir="-1" aria-label="Decrease adults">−</button>
+                <span class="stepper-count" id="countAdults" aria-live="polite">2</span>
+                <button type="button" class="stepper-btn" data-step="adults" data-dir="1" aria-label="Increase adults">+</button>
+              </div>
+            </div>
+            <div class="stepper-row">
+              <div class="stepper-text"><strong>Children</strong><span>Ages 2–12</span></div>
+              <div class="stepper-controls">
+                <button type="button" class="stepper-btn" data-step="children" data-dir="-1" aria-label="Decrease children">−</button>
+                <span class="stepper-count" id="countChildren" aria-live="polite">0</span>
+                <button type="button" class="stepper-btn" data-step="children" data-dir="1" aria-label="Increase children">+</button>
+              </div>
+            </div>
+            <div class="stepper-row">
+              <div class="stepper-text"><strong>Infants</strong><span>Under 2</span></div>
+              <div class="stepper-controls">
+                <button type="button" class="stepper-btn" data-step="infants" data-dir="-1" aria-label="Decrease infants">−</button>
+                <span class="stepper-count" id="countInfants" aria-live="polite">0</span>
+                <button type="button" class="stepper-btn" data-step="infants" data-dir="1" aria-label="Increase infants">+</button>
+              </div>
+            </div>
+            <p class="stepper-note" id="stepperNote">Base price covers 2 guests. +$25/night per additional guest.</p>
+            <div class="popover-actions">
+              <button type="button" class="link-btn underline" id="guestCloseBtn">Close</button>
+            </div>
+          </div>
+
+          <!-- Calendar popover -->
+          <div class="popover cal-popover" id="calPopover" role="dialog" aria-label="Select dates" hidden></div>
+        </div>
+
+        <button class="reserve-btn" id="reserveBtn" type="button">
+          <span class="btn-label">Reserve</span>
+        </button>
+        <p class="no-charge-text">You won't be charged yet</p>
+
+        <div class="price-breakdown">
+          <div class="price-row"><span class="link-btn underline" id="nightsLabel">$284 x 4 nights</span><span id="nightsTotal">$1,136</span></div>
+          <div class="price-row" id="extraGuestRow" style="display: none;"><span class="link-btn underline" id="extraGuestLabel">Extra guest fee</span><span id="extraGuestTotal">$0</span></div>
+          <div class="price-row"><span class="link-btn underline">Cleaning fee</span><span id="cleaningFeeTotal">$90</span></div>
+          <div class="price-row"><span class="link-btn underline">Airhome service fee</span><span id="serviceFeeTotal">$159</span></div>
+          <hr class="divider tight">
+          <div class="price-row total"><span>Total before taxes</span><span id="grandTotal">$1,385</span></div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <section class="container similar-listings reveal" data-reveal id="otherPlacesSection">
+    <div class="section-head">
+      <div>
+        <h2>Other places to stay near Government Camp</h2>
+        <p>Click "Select Property" on any home to explore its photos and reserve it directly</p>
+      </div>
+      <div class="properties-count-badge" id="propertiesCountBadge">7 properties</div>
+    </div>
+    <div class="listings-grid" id="listingsGrid"></div>
+  </section>
+
+</main>
+
+<!-- Mobile sticky bar -->
+<div class="mobile-bar">
+  <div>
+    <span class="price"><strong id="mobilePrice">$284</strong> night</span>
+    <span class="mobile-bar-sub" id="mobileDates">Nov 14 – 18</span>
+  </div>
+  <button class="reserve-btn" id="mobileReserveBtn" type="button">Reserve</button>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Airhome Clone, Inc. · This is a portfolio project, not affiliated with Airbnb.</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden>
+  <div class="lightbox-topbar">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close photo gallery">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.7l-1.42-1.41L8.59 12 2.3 5.71 3.7 4.3 10 10.59l6.29-6.3z"/></svg>
+    </button>
+    <span class="lightbox-counter" id="lightboxCounter">1 / 5</span>
+  </div>
+  <div class="lightbox-body">
+    <button class="lightbox-nav prev" id="lightboxPrev" type="button" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.5 3.5 6 12l9.5 8.5 1.4-1.4L9 12l7.9-7.1z"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-nav next" id="lightboxNext" type="button" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M8.5 3.5 18 12l-9.5 8.5-1.4-1.4L15 12 7.1 4.9z"/></svg>
+    </button>
+  </div>
+  <div class="lightbox-thumbs" id="lightboxThumbs"></div>
+</div>
+
+<!-- ============ AMENITIES MODAL ============ -->
+<div class="modal-overlay" id="amenitiesOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="amenitiesTitle">
+    <div class="modal-header">
+      <button class="lightbox-close" id="amenitiesClose" type="button" aria-label="Close amenities list">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.7l-1.42-1.41L8.59 12 2.3 5.71 3.7 4.3 10 10.59l6.29-6.3z"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <h2 id="amenitiesTitle">What this place offers</h2>
+
+      <h3 class="modal-subhead">Bathroom</h3>
+      <ul class="modal-amenity-list">
+        <li>Hair dryer</li><li>Shampoo</li><li>Hot water</li><li>Cedar soaking tub</li>
+      </ul>
+      <h3 class="modal-subhead">Bedroom &amp; laundry</h3>
+      <ul class="modal-amenity-list">
+        <li>Washer</li><li>Dryer</li><li>Essentials — towels, bed sheets, soap</li><li>Hangers</li><li>Blackout curtains</li>
+      </ul>
+      <h3 class="modal-subhead">Heating &amp; cooling</h3>
+      <ul class="modal-amenity-list">
+        <li>Wood-burning fireplace</li><li>Central heating</li><li>Ceiling fan</li>
+      </ul>
+      <h3 class="modal-subhead">Internet &amp; office</h3>
+      <ul class="modal-amenity-list">
+        <li>Wifi — 300 Mbps</li><li>Dedicated workspace</li>
+      </ul>
+      <h3 class="modal-subhead">Kitchen &amp; dining</h3>
+      <ul class="modal-amenity-list">
+        <li>Full kitchen</li><li>Refrigerator</li><li>Cooking basics</li><li>Coffee maker</li><li>Dining table</li>
+      </ul>
+      <h3 class="modal-subhead">Outdoor</h3>
+      <ul class="modal-amenity-list">
+        <li>Private hot tub</li><li>Private patio</li><li>Fire pit</li><li>Free parking on premises</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HOST MODAL ============ -->
+<div class="modal-overlay" id="hostOverlay" hidden>
+  <div class="modal modal-narrow" role="dialog" aria-modal="true" aria-labelledby="hostTitle">
+    <div class="modal-header">
+      <button class="lightbox-close" id="hostClose" type="button" aria-label="Close host profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.7l-1.42-1.41L8.59 12 2.3 5.71 3.7 4.3 10 10.59l6.29-6.3z"/></svg>
+      </button>
+    </div>
+    <div class="modal-body host-modal-body">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=80" alt="Portrait of host Maren" class="host-modal-avatar">
+      <h2 id="hostTitle">Maren</h2>
+      <p class="meta-line">Host since 2019 · 312 reviews · Identity verified</p>
+      <div class="host-modal-stats">
+        <div><strong>4.97</strong><span>Rating</span></div>
+        <div><strong>312</strong><span>Reviews</span></div>
+        <div><strong>7yrs</strong><span>Hosting</span></div>
+      </div>
+      <p class="host-modal-bio">I split my time between Portland and this cabin — I built most of it myself over two winters. I'll usually leave you a trail map and firewood, and I'm a quick message away if you need anything during your stay.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SHARE MODAL ============ -->
+<div class="modal-overlay" id="shareOverlay" hidden>
+  <div class="modal modal-narrow" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+    <div class="modal-header">
+      <h2 id="shareTitle" class="modal-title-inline">Share this listing</h2>
+      <button class="lightbox-close" id="shareClose" type="button" aria-label="Close share dialog">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.7l-1.42-1.41L8.59 12 2.3 5.71 3.7 4.3 10 10.59l6.29-6.3z"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <button class="share-row" type="button" id="copyLinkBtn">
+        <span class="share-icon">🔗</span>
+        <span><strong>Copy link</strong><small>Share via clipboard</small></span>
+      </button>
+      <button class="share-row" type="button">
+        <span class="share-icon">✉️</span>
+        <span><strong>Email</strong><small>Send this listing by email</small></span>
+      </button>
+      <button class="share-row" type="button">
+        <span class="share-icon">💬</span>
+        <span><strong>Messages</strong><small>Send a link directly</small></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

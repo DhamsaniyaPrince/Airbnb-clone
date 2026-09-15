@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "project": {
+    "name": "PowerPlay",
+    "description": "Static Airbnb-style property listing page (HTML/CSS/vanilla JS, no build step)."
+  },
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(index.html)",
+      "Edit(styles.css)",
+      "Edit(script.js)",
+      "Bash(python3 -m http.server *)",
+      "Bash(npx serve *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force*)"
+    ]
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
